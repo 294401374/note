@@ -1,0 +1,43 @@
+  $.ajax({
+        url:"/api/code.php",
+        data:"phone="+phone,
+        type:"post",
+        dataType:"json",
+        success:function(msg){
+            if(msg.status == 1){
+                parent.jQuery.fancybox.close();
+                window.parent.location.reload();
+                checklogin();                                     
+            }else{
+                $("#is_p").html("用户名或者密码不正确");
+            }
+        }
+    });
+
+url就是php的地址
+
+这个是jquery里的ajax， 所以用的时候记得引入jquery文件
+
+data是传给php接口的参数
+
+type是请求方式  get 或者post
+
+dataType是接收返回值的格式，一般情况下都用json
+
+success里面是执行成功以后执行的方法
+
+比如php返回的是 {"status":1,"message":"成功"}   
+html这段ajax就可以接收到，success:function(msg)   
+括号里的这个参数是随便写的，比如上面那个返回值，
+接收以后就可以写成  msg.status   msg.message， 
+一般都是用status做判断，等于1就执行成功，0就执行失败
+
+就是调用接口
+
+之前不是写了好几个接口么，登录注册，或者查询数据库的那个
+
+我之前不就说返回值要写成json格式么
+
+直接跟这个ajax搭配起来使用就可以了
+
+

@@ -1,0 +1,15 @@
+1.安装git
+	$ git config --global user.name "Your Name"
+	$ git config --global user.email "email@example.com"
+
+2.创建版本库
+	$ git init
+	$ git add readme.txt
+	$ git commit -m "wrote a readme file"
+3.时光机穿梭
+	
+
+4.远程仓库
+	1.$ ssh-keygen -t rsa -C "youremail@example.com"
+	2.$ git remote add origin git@github.com:baotong/项目名称.git
+	3.$ git push -u origin master
