@@ -13,3 +13,6 @@
 	1.$ ssh-keygen -t rsa -C "youremail@example.com"
 	2.$ git remote add origin git@github.com:baotong/项目名称.git
 	3.$ git push -u origin master
+解决错误问题：http://blog.csdn.net/god_wot/article/details/10522405
+	$ git remote show origin 显示远程仓库
+	$ git remote rm origin 删除远程仓库
