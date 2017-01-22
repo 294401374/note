@@ -16,3 +16,4 @@
 解决错误问题：http://blog.csdn.net/god_wot/article/details/10522405
 	$ git remote show origin 显示远程仓库
 	$ git remote rm origin 删除远程仓库
+ceshi
