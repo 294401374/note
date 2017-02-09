@@ -16,4 +16,6 @@
 解决错误问题：http://blog.csdn.net/god_wot/article/details/10522405
 	$ git remote show origin 显示远程仓库
 	$ git remote rm origin 删除远程仓库
-ceshi
+5.git 版本回退
+	1. a. $ git reset --hard HEAD^(HEAD^^).当然往上100个版本写100个^比较容		易数不过来，所以写成HEAD~100
+	   b. $ git reset --hard 3628164
