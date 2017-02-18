@@ -6,7 +6,7 @@
 	$ git init
 	$ git add readme.txt
 	$ git commit -m "wrote a readme file"
-3.时光机穿梭
+3.时光机穿梭（版本回退）
 	
 
 4.远程仓库
@@ -16,6 +16,17 @@
 解决错误问题：http://blog.csdn.net/god_wot/article/details/10522405
 	$ git remote show origin 显示远程仓库
 	$ git remote rm origin 删除远程仓库
+	
 5.git 版本回退
 	1. a. $ git reset --hard HEAD^(HEAD^^).当然往上100个版本写100个^比较容		易数不过来，所以写成HEAD~100
-	   b. $ git reset --hard 3628164
+	   b. $ git reset --hard 3628164(版本号)
+	缺少add以后的撤销功能。
+6.撤销密令 有两种
+	 一、在工作区没有提交到暂存区 用git checkout --readme.txt（文件名）就可以了
+	 二、已经提交到暂存区 1）git reset HEAD readme.txt(这个命令可以把站存取的修改撤销)
+		2）再用git checkout --readme.txt就可以了。
+
+
+7.克隆 git clone https://github.com/top-think/think.git
+
+8.删除文件 从版本库中删除 命令：git rm。再git commit ，删错了可以用checkout
